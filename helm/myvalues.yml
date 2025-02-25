@@ -1,7 +1,7 @@
 image:
   tag: "4.0"
 
-replicaCount: 2
+replicaCount: 1
 
 ingress:
   name: exprm-k8s-exprm1
@@ -10,7 +10,7 @@ ingress:
 nodeSelector:
   role-app: app
 
-#resources:
-#  requests:
-#    cpu: 10m
-#    memory: 4Gi
+resources:
+  requests:
+    cpu: 10m
+    memory: 4Gi
